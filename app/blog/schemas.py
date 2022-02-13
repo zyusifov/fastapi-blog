@@ -6,6 +6,9 @@ class Blog(BaseModel):
     title: str
     description: str
     slug: str | None = None
+        
+    class Config():
+        orm_mode = True
 
 
 class BlogShow(BaseModel):
